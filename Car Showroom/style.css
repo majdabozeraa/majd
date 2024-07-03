@@ -1,0 +1,255 @@
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: black;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+*/
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #666;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end  global rules */
+
+/* Start Header */
+
+header {
+
+    padding-right: 9.3rem;
+    padding-left: 9.3rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);
+    height: 115px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+    padding: 35px 30px;
+}
+
+
+.container a {
+    text-decoration: none;
+}
+
+.container .btn-login {
+    background-image: linear-gradient(to right, #000000 0%, #FF0000 51%, #FFCC00 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.container .btn-login:hover {
+    background-position: right;
+
+    text-decoration: none;
+}
+
+/* End Header */
+/* Start Welcome to our showroom */
+.all {
+    background: url(/img/loading-page.jpg);
+    padding: 250px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.all .text {
+
+    background-color: #81d4fa73;
+    width: 23%;
+    padding: 20px;
+    border-radius: 20px 15px 10px 0;
+    padding-left: 40px;
+}
+
+.all .text h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.all .text h1 {
+    font-weight: 900;
+}
+
+/* end Welcome to our showroom */
+
+/* start bmw section */
+section .sec-con {
+    margin-bottom: -7px;
+}
+
+section .sec-con img {
+    max-width: 100%;
+    height: 67.2rem;
+
+}
+
+section .content .text {
+    text-align: center;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-image: linear-gradient(40deg, #000000e8, transparent, #000000b5);
+}
+
+section .car {
+    position: relative;
+    width: 100%;
+    background-color: #4e4848;
+    padding: 30px;
+    display: flex;
+    color: white;
+    line-height: 1.6;
+}
+
+
+
+section .content .car>img {
+    width: 25%;
+    box-shadow: 0 12px 14px 2px #7e7e7e;
+    position: relative;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.content .info {
+    padding: 3rem;
+    flex: 1;
+    background: black;
+    margin-left: 36px;
+    border-radius: 27px;
+    color: white;
+    line-height: 1.6;
+}
+
+
+section .content .info a {
+    color: white;
+    position: absolute;
+    right: 129px;
+    bottom: 60px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+}
+
+section .content .info a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* end bmw section */
+
+/* start m-b section */
+section .benz {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+section .benz .info {
+    background-color: #8e693f;
+    margin-right: 26px;
+    font-size: 17.6px;
+}
+
+/* end m-b section */
